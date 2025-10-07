@@ -1,0 +1,64 @@
+<!-- ecommerce-final.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      display: flex; justify-content: center; align-items: center;
+      min-height: 100vh; padding: 20px;
+    }
+
+    .product-card {
+      background: white; border-radius: 20px;
+      max-width: 400px; width: 100%;
+      text-align: center; padding: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%; border-radius: 15px; margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+    .product-card img:hover { transform: scale(1.05); }
+
+    .product-name { font-size: 26px; margin-bottom: 10px; color: #1d3557; }
+    .product-desc { font-size: 16px; color: #555; margin-bottom: 15px; }
+    .price { font-size: 22px; font-weight: bold; color: #e63946; margin-bottom: 15px; }
+
+    .buy-btn {
+      background-color: #1d3557; color: white; padding: 12px 25px;
+      border: none; border-radius: 12px; cursor: pointer; font-size: 16px;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .buy-btn:hover {
+      background-color: #457b9d;
+      transform: scale(1.05);
+    }
+
+    @media(max-width: 450px){
+      .product-name { font-size: 22px; }
+      .price { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/350x250" alt="Product Image">
+    <h2 class="product-name">Product Name</h2>
+    <p class="product-desc">This is a short description of the product highlighting key features and specifications.</p>
+    <div class="price">$49.99</div>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</body>
+</html>
